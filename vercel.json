@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "https://journey-through-healing.lovable.app/$1" }
-  ]
-}
- 
