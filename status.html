@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masterclass Skills — Status &amp; To do</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f1013; --card:#17181c; --ink:#f2f0ea; --ink-dim:rgba(242,240,234,0.62);
+    --accent:#9b8cfb; --line:rgba(255,255,255,0.1); --ok:#6fc9a0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif; display:flex; justify-content:center;
+    padding:60px 20px;
+  }
+  .wrap{ width:100%; max-width:680px; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:0.75rem; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:0.8rem;
+  }
+  h1{ font-family:'Fraunces', serif; font-size:2rem; margin:0 0 2.2rem; line-height:1.15; }
+
+  .link-card{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:20px 22px; text-decoration:none; color:var(--ink); margin-bottom:2.8rem;
+    transition:border-color 0.2s ease;
+  }
+  .link-card:hover{ border-color:var(--accent); }
+  .link-card .meta{ display:flex; flex-direction:column; gap:4px; }
+  .link-card .label{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-dim); }
+  .link-card .url{ font-size:1.05rem; font-weight:500; }
+  .link-card .arrow{ font-size:1.3rem; color:var(--accent); flex-shrink:0; }
+
+  h2{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--ink-dim); margin:0 0 1.2rem; font-weight:500;
+  }
+
+  .todo{ list-style:none; padding:0; margin:0 0 2.6rem; display:flex; flex-direction:column; gap:2px; }
+  .todo li{
+    display:flex; align-items:flex-start; gap:12px; padding:14px 4px; border-bottom:1px solid var(--line);
+  }
+  .todo .box{
+    width:18px; height:18px; border:1.5px solid var(--ink-dim); border-radius:4px; flex-shrink:0; margin-top:2px;
+  }
+  .todo .txt{ font-size:0.98rem; line-height:1.5; }
+  .todo .txt b{ font-weight:600; }
+  .todo .txt span.sub{ display:block; font-size:0.85rem; color:var(--ink-dim); margin-top:2px; }
+
+  .note{
+    font-size:0.85rem; color:var(--ink-dim); line-height:1.6; padding-top:1rem; border-top:1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Masterclass Skills · november</div>
+  <h1>Status &amp; wat er nog moet gebeuren</h1>
+
+  <a class="link-card" href="https://journey-through-healing.lovable.app" target="_blank" rel="noopener">
+    <div class="meta">
+      <span class="label">Huidige versie · scrollytelling</span>
+      <span class="url">journey-through-healing.lovable.app</span>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+
+  <h2>Nog te doen</h2>
+  <ul class="todo">
+    <li><div class="box"></div><div class="txt"><b>Beoordelen of dit de eindversie is</b><span class="sub">Of nog verder verfijnen in Lovable — beelden, timing, kleuroverdracht checken</span></div></li>
+    <li><div class="box"></div><div class="txt"><b>Ansichtkaart hosten</b><span class="sub">Als <code>kaart.html</code> in dezelfde GitHub-repo, naast de scrollytelling-app</span></div></li>
+    <li><div class="box"></div><div class="txt"><b>QR-code bijwerken</b><span class="sub">Placeholder-URL in de ansichtkaart vervangen door de echte, live Vercel-link</span></div></li>
+    <li><div class="box"></div><div class="txt"><b>Beide op GitHub → Vercel zetten</b><span class="sub">Eén repo, twee bestanden, automatische deploy</span></div></li>
+    <li><div class="box"></div><div class="txt"><b>Ansichtkaart versturen</b><span class="sub">Als teaser-mail richting NVZ, ruim vóór november</span></div></li>
+  </ul>
+
+  <div class="note">
+    Persoonlijke statuspagina — niet bedoeld om te delen met NVZ.
+  </div>
+</div>
+</body>
+</html>
