@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!kaart.html|status.html).*)", "destination": "https://journey-through-healing.lovable.app/$1" }
+  ]
+}
